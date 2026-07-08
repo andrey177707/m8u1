@@ -1,7 +1,7 @@
 import telebot
 from logic import detect_trash
 
-bot = telebot.TeleBot("8591309669:AAHtMhd1RHD2Cz29q0QgesEscnMC23dzae4")
+bot = telebot.TeleBot("")
 
 @bot.message_handler(commands=['Старт', 'старт', 'start', 'Start'])
 def start(message):
