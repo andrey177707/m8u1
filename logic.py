@@ -2,12 +2,12 @@ from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
 
-trash = {"стекло\n":"text\glass.txt", 
-"пластик\n":"text\plastic.txt", 
-"батарейки\n":"text\battery.txt",
-"аккамуляторы\n":"text\accamulator.txt",
-"алюминий\n":"text\aluminum.txt",
-"бумага и картон\n":"text\paper_cardboard.txt"
+trash = {"стекло\n":"text/glass.txt", 
+"пластик\n":"text/plastic.txt", 
+"батарейки\n":"text/battery.txt",
+"аккамуляторы\n":"text/accamulator.txt",
+"алюминий\n":"text/aluminum.txt",
+"бумага и картон\n":"text/paper_cardboard.txt"
 }
 
 def detect_trash(img, model, label):
